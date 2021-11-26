@@ -12,8 +12,8 @@ require_once 'vista/head.php'
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="index.php">Inicio</a></li>
-             
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">Dashboard v2</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -47,8 +47,8 @@ require_once 'vista/head.php'
               <span class="info-box-icon bg-danger elevation-1"><i class="fas fa-thumbs-up"></i></span>
 
               <div class="info-box-content">
-                <span class="info-box-text">Likes</span>
-                <span class="info-box-number">41,410</span>
+                <span class="info-box-text">Ventas Realizadas</span>
+                <span class="info-box-number">510</span>
               </div>
               <!-- /.info-box-content -->
             </div>
@@ -64,8 +64,8 @@ require_once 'vista/head.php'
               <span class="info-box-icon bg-success elevation-1"><i class="fas fa-shopping-cart"></i></span>
 
               <div class="info-box-content">
-                <span class="info-box-text">Sales</span>
-                <span class="info-box-number">760</span>
+                <span class="info-box-text">Total Vendido</span>
+                <span class="info-box-number">$100</span>
               </div>
               <!-- /.info-box-content -->
             </div>
@@ -98,7 +98,7 @@ require_once 'vista/head.php'
             <!-- TABLE: LATEST ORDERS -->
             <div class="card">
               <div class="card-header border-transparent">
-                <h3 class="card-title">Latest Orders</h3>
+                <h3 class="card-title">Mis Pedidos (Vista Previa)</h3>
 
                 <div class="card-tools">
                   <button type="button" class="btn btn-tool" data-card-widget="collapse">
@@ -115,27 +115,27 @@ require_once 'vista/head.php'
                   <table class="table m-0">
                     <thead>
                     <tr>
-                      <th>Order ID</th>
-                      <th>Item</th>
-                      <th>Status</th>
-                      <th>Popularity</th>
+                      <th>Orden ID</th>
+                      <th>Producto</th>
+                      <th>Estado</th>
+                      <th>Piezas / Unidades</th>
                     </tr>
                     </thead>
                     <tbody>
                     <tr>
-                      <td><a href="pages/examples/invoice.html">OR9842</a></td>
-                      <td>Call of Duty IV</td>
-                      <td><span class="badge badge-success">Shipped</span></td>
+                      <td><a href="pages/examples/invoice.html">VNT0001</a></td>
+                      <td>Aretes Color Cafe Papantla</td>
+                      <td><span class="badge badge-success">Enviado</span></td>
                       <td>
-                        <div class="sparkbar" data-color="#00a65a" data-height="20">90,80,90,-70,61,-83,63</div>
+                        <div class="sparkbar" data-color="#00a65a" data-height="20">2</div>
                       </td>
                     </tr>
                     <tr>
                       <td><a href="pages/examples/invoice.html">OR1848</a></td>
-                      <td>Samsung Smart TV</td>
-                      <td><span class="badge badge-warning">Pending</span></td>
+                      <td>Anillo Oro 24k Mixteca </td>
+                      <td><span class="badge badge-warning">Pendiente</span></td>
                       <td>
-                        <div class="sparkbar" data-color="#f39c12" data-height="20">90,80,-90,70,61,-83,68</div>
+                        <div class="sparkbar" data-color="#f39c12" data-height="20">1   </div>
                       </td>
                     </tr>
                     <tr>
@@ -197,7 +197,7 @@ require_once 'vista/head.php'
             <!-- PRODUCT LIST -->
             <div class="card ">
               <div class="card-header">
-                <h3 class="card-title">Recently Added Products</h3>
+                <h3 class="card-title">Productos Recientemente Agregados</h3>
 
                 <div class="card-tools">
                   <button type="button" class="btn btn-tool" data-card-widget="collapse">
@@ -213,13 +213,13 @@ require_once 'vista/head.php'
                 <ul class="products-list product-list-in-card pl-2 pr-2">
                   <li class="item">
                     <div class="product-img">
-                      <img src="dist/img/default-150x150.png" alt="Product Image" class="img-size-50">
+                      <img src="assets/dist/img/default-150x150.png" alt="Product Image" class="img-size-50">
                     </div>
                     <div class="product-info">
-                      <a href="javascript:void(0)" class="product-title">Samsung TV
+                      <a href="javascript:void(0)" class="product-title">Arete 24K Tihuatlan
                         <span class="badge badge-warning float-right">$1800</span></a>
                       <span class="product-description">
-                        Samsung 32" 1080p 60Hz LED Smart HDTV.
+                       Bonito Arete para toda ocacion hecho por personas artesanales de tihuatlan
                       </span>
                     </div>
                   </li>
@@ -290,6 +290,31 @@ require_once 'vista/head.php'
     <!-- Control sidebar content goes here -->
   </aside>
   <!-- /.control-sidebar -->
+
+   <!-- /.modal -->
+
+   <div class="modal fade" id="modal-primary">
+        <div class="modal-dialog">
+          <div class="modal-content bg-primary">
+            <div class="modal-header">
+              <h4 class="modal-title">Primary Modal</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>One fine body&hellip;</p>
+            </div>
+            <div class="modal-footer justify-content-between">
+              <button type="button" class="btn btn-outline-light" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-outline-light">Save changes</button>
+            </div>
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+      </div>
+      <!-- /.modal -->
 
 <?php 
 require_once 'vista/footer.php'
